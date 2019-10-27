@@ -1,0 +1,8 @@
+version: "3"
+services:
+  unbound:
+    build: .
+    ports:
+      - "53:53"
+      - "53:53/udp"
+    restart: always
